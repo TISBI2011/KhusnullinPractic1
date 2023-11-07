@@ -1,0 +1,54 @@
+﻿<Page x:Class="Praktika1.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Praktika1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Background="Gray"
+                    Grid.ColumnSpan="3">
+            <TextBlock Text="UZBEK МИГРАНТ ЗАБЕГАЛОВКА"
+                       Foreground="Black"
+                       FontSize="40" />
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0"
+                    Background="Firebrick" Grid.ColumnSpan="3" Margin="0,0,10,0">
+            <Image Source="/Praktika1;component/image/neo.jpg" Height="364"
+                   />
+        </StackPanel>
+
+        <Button x:Name="BDish"
+                    Content="Меню настоящего мигранта" FontSize="12" Foreground="Green" Background="Black"
+                    Click="BDish_Click" Grid.Column="1" Margin="10,27,573,305" Grid.Row="1" RenderTransformOrigin="1.282,1.18" />
+        <Button x:Name="BTypeofdish"
+                Content="Описание меню настоящего мигранта" FontSize="10" Foreground="Green" Background="Black"
+                Click="BTypeofdish_Click" Grid.Column="1" Margin="10,97,573,240" Grid.Row="1" RenderTransformOrigin="0.516,0.506">
+        </Button>
+        <Button x:Name="BExit"
+                Content="НЕ УХОДИ БРАТ" FontSize="15" Foreground="Black"  Background="Red"
+                Click="BExit_Click" Grid.Column="1" Margin="584,278,30,32" Grid.Row="1">
+        </Button>
+        
+
+        
+
+
+
+
+    </Grid>
+</Page>
